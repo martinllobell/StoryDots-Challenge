@@ -1,16 +1,30 @@
 const { Brand, Product } = require("../db.js");
-
+const { Op } = require('sequelize');
 
 const getAllProducts = async (req, res) => {
     try {
-        const productSearch = await Product.findAll({ include: [{ model: Brand }] });
+        const { name } = req.query;
+
+        let productSearch;
+
+        if (name) {
+            productSearch = await Product.findAll({
+                include: [{ model: Brand }],
+                where: {
+                    name: {
+                        [Op.iLike]: `%${name}%`,
+                    },
+                },
+            });
+        } else {
+            productSearch = await Product.findAll({ include: [{ model: Brand }] });
+        }
 
         if (!productSearch.length) return res.status(404).json("Products not found");
         else return res.status(200).json(productSearch);
-
     } catch (error) {
         console.log(error);
-        return res.json("Product not found");
+        return res.status(500).json("An error occurred while fetching products");
     }
 };
 
