@@ -1,0 +1,67 @@
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: rgba(255, 255, 255, 0.455);
+    backdrop-filter: blur(5px);
+    padding: 20px;
+    border-bottom-left-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+}
+
+.logo {
+    max-width: 100%;
+    height: auto;
+}
+
+.logoContainer:hover {
+    transition: .3s;
+    transform: scale(1.1);
+}
+
+.btnLogo{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    background-color: transparent;
+    border-color: transparent;
+    transition: .3s;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.search{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+.searchInput{
+    width: 23vw;
+    height: 1.7rem;
+    border-radius: 1rem;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    background-color: var(--purple);
+    border-color: var(#5d52fc);
+    transition: .3s;
+    transform: scale(1.1);
+    cursor: pointer;
+    color: white;
+}
+
+.createContainer:hover{
+    transition: .3s;
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+}
