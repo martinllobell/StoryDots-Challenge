@@ -28,7 +28,7 @@ const Navbar = () => {
             </div>
             <div className={styles.searchContainer}>
                 <div className={styles.search}>
-                    <input className={styles.searchInput} value={name} type="text" placeholder='Search a product or brand' onChange={(e) => { setName(e.target.value); handleInputChange(e.target.value) }} />
+                    <input className={styles.searchInput} value={name} type="text" placeholder='Search' onChange={(e) => { setName(e.target.value); handleInputChange(e.target.value) }} />
                 </div>
             </div>
             <div>

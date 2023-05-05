@@ -10,15 +10,14 @@ import Navbar from "./components/navbar/navbar";
 const App = () => {
   return (
     <div className="App">
-      <Navbar>
-        <Routes>
-          <Route exact path='/home' element={<Home />} />
-          <Route exact path='/products/:id' element={<ProductDetail />} />
-          <Route exact path='/brands/:id' element={<BrandDetail />} />
-          <Route exact path='/products' element={<ProductCreate />} />
-          <Route exact path='/brands' element={<BrandCreate />} />
-        </Routes>
-      </Navbar>
+      <Navbar />
+      <Routes>
+        <Route exact path='/home' element={<Home />} />
+        <Route exact path='/products/:id' element={<ProductDetail />} />
+        <Route exact path='/brands/:id' element={<BrandDetail />} />
+        <Route exact path='/products' element={<ProductCreate />} />
+        <Route exact path='/brands' element={<BrandCreate />} />
+      </Routes>
     </div>
   )
 }
