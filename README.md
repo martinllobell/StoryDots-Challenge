@@ -1,4 +1,4 @@
-![storydots logo](./client/src/images/storydots.jpg)
+![storydots logo](./client/src/components/images/storydots.jpg)
 
 # StoryDots Full Stack Challenge
 
