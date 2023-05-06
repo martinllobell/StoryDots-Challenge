@@ -22,24 +22,33 @@ const Navbar = () => {
             <div className={styles.logoContainer}>
                 <Link to="/home">
                     <button className={styles.btnLogo}>
-                        <img className="logo" src={logo} alt="logo" />
+                        <img
+                            className="logo"
+                            src={logo}
+                            alt="logo"
+                        />
                     </button>
                 </Link>
             </div>
             <div className={styles.searchContainer}>
                 <div className={styles.search}>
-                    <input className={styles.searchInput} value={name} type="text" placeholder='Search' onChange={(e) => { setName(e.target.value); handleInputChange(e.target.value) }} />
+                    <input
+                        className={styles.searchInput}
+                        value={name} type="text"
+                        placeholder='Search'
+                        onChange={(e) => { setName(e.target.value); handleInputChange(e.target.value) }}
+                    />
                 </div>
             </div>
             <div>
                 <div className={styles.createContainer}>
                     <Link to="/products" className={styles.productsLink}>
-                        <button className={styles.btn}>Create Product</button>
+                        <button className={styles.btn}>Crear producto</button>
                     </Link>
                 </div>
                 <div className={styles.createContainer}>
                     <Link to="/brands" className={styles.brandsLink}>
-                        <button className={styles.btn}>Create Brand</button>
+                        <button className={styles.btn}>Crear marca</button>
                     </Link>
                 </div>
             </div>

@@ -1,7 +1,7 @@
 .card {
     position: relative;
-    width: 250px;
-    height: 300px;
+    width: 500px;
+    height: 600px;
     margin: 10px;
     background-color: #fff;
     border-radius: 5px;
@@ -12,7 +12,7 @@
   .imageContainer {
     position: relative;
     width: 100%;
-    height: 80%;
+    height: 70%;
     overflow: hidden;
   }
   
@@ -29,7 +29,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.412);
     color: #fff;
     display: flex;
     justify-content: center;
@@ -79,7 +79,7 @@
   .imageContainer:hover .description p {
     opacity: 1;
     animation-name: breathe;
-    animation-duration: 2s;
+    animation-duration: 10s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
   }

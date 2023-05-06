@@ -13,42 +13,42 @@ const productsJson = [
     {
         name: "Basilisk V3 Pro",
         description: "The king returns to raise the game. Enter the Razer Basilisk V3 Pro—our most advanced gaming mouse yet. Armed to the teeth with industry-leading technology, unlock your maximum potential with a weapon that pushes the known limits of performance, customization, connectivity, and control.",
-        image_url: "https://app.contabilium.com/files/explorer/7026/Productos-Servicios/concepto-9961016.png",
+        image_url: "https://res.cloudinary.com/grover/image/upload/f_webp,q_auto/b_white,c_pad,dpr_2.0,h_500,w_520/f_auto,q_auto/v1678361995/yt9iew1pzhylomovornx.png",
         price: 5000.10,
         BrandId: 1
     },
     {
         name: "Viper Mini Signature Edition",
         description: "Your dream mouse has just been surpassed. For those who dare to want it all, arm yourself with a masterpiece that outclasses the competition in weight, design, and performance. Introducing the Razer Viper Mini Signature Edition—the best lightweight performance gaming mouse ever created.",
-        image_url: "https://image-cdn.hypb.st/https%3A%2F%2Fhypebeast.com%2Fimage%2F2023%2F02%2Frazer-viper-mini-signature-edition-lightest-ever-gaming-mouse-info-000.jpg?w=960&cbr=1&q=90&fit=max",
+        image_url: "https://dl.razerzone.com/src2/9682/9682-1-en-v1.png",
         price: 7000.20,
         BrandId: 1
     },
     {
         name: "DeathAdder V3 Pro",
         description: "Victory takes on a new shape with the Razer DeathAdder V3 Pro. Refined and reforged with the aid of top esports pros, its iconic ergonomic form is now more than 25% lighter than its predecessor, backed by a set of cutting-edge upgrades to push the limits of competitive play.",
-        image_url: "https://i.rtings.com/assets/products/XZTWfCaG/razer-deathadder-v3-pro/design-large.jpg",
+        image_url: "https://prosettings.net/wp-content/uploads/razer-deathadder-v3-pro.png",
         price: 5000.30,
         BrandId: 1
     },
     {
         name: "Blackwidow V4 Pro",
         description: "Empower your play with a centerpiece that elevates your entire setup. Enter the next phase of battlestation evolution with the ultimate mechanical gaming keyboard. Take full command with a set of features designed for advanced control, and enhance your immersion with full-blown Razer Chroma™ RGB.",
-        image_url: "https://i.rtings.com/assets/products/MMgt3UYQ/razer-blackwidow-v4-pro/design-medium.jpg",
+        image_url: "https://dl.razerzone.com/src2/9703/9703-1-en-v1.png",
         price: 12000.40,
         BrandId: 1
     },
     {
         name: "Deathstalker V2 Pro",
         description: "Meet the Razer DeathStalker V2 Pro—a wireless ultra-slim optical keyboard optimized for top-tier performance and durability. Featuring new low-profile switches and Razer™ HyperSpeed Wireless for ultra-responsive gaming, all housed within a durable, ultra-slim casing for long-lasting ergonomic use.",
-        image_url: "https://cdn.mos.cms.futurecdn.net/cwQWRHnezpyRMK5vtzR2E3-1200-80.jpg",
+        image_url: "https://m.media-amazon.com/images/I/71zfppj4DtL.jpg",
         price: 10000.50,
         BrandId: 1
     },
     {
         name: "Huntsman V2 Analog",
         description: "Enter a higher dimension of control with the Razer Huntsman V2 Analog—our first analog optical gaming keyboard. Armed with every feature you’d expect from a top-of-the-line design, you’ll want for nothing in your pursuit of victory.",
-        image_url: "https://freakelitex.com/wp-content/uploads/2021/02/Razer-Huntsman-V2-Analog.jpg",
+        image_url: "https://dl.razerzone.com/src/4024-1-EN-v1.png",
         price: 15000.60,
         BrandId: 1
     },
@@ -62,7 +62,7 @@ const productsJson = [
     {
         name: "Ornata V3",
         description: "Meet the Razer Ornata V3—a low-profile ergonomic gaming keyboard powered by Razer Chroma™ RGB. Sporting a new ultra-slim form factor, more durable keycaps, and unique mecha-membrane switches, enhance your work and play with a hybrid keyboard that combines the best of both worlds.",
-        image_url: "https://assets2.razerzone.com/images/pnx.assets/fdf0065feb0fc548f3631a3af85e29fe/parallax-scrolling-mobile-1.jpg",
+        image_url: "https://media.ldlc.com/r1600/ld/products/00/05/96/58/LD0005965890.jpg",
         price: 11000.80,
         BrandId: 1
     },

@@ -1,26 +1,18 @@
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import SwiperCore, { Navigation, Pagination } from 'swiper';
+import SwiperCore, { Autoplay, Navigation } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper-bundle.css';
 import { getAllBrands, getAllProducts } from "../../redux/actions";
 import Card from "../card/card";
 import styles from "./home.module.css";
 
+SwiperCore.use([Navigation, Autoplay]);
+
 const Home = () => {
     const dispatch = useDispatch();
     const allProducts = useSelector(store => store.allProducts);
-    console.log(allProducts)
-
-    const [currentPage, setCurrentPage] = useState(1)
-    const [productsPerPage, setProductsPerPage] = useState(12)
     const [loading, setLoading] = useState(true);
-
-
-    const indexOfLastProduct = currentPage * productsPerPage
-    const indexOfFirstProduct = indexOfLastProduct - productsPerPage
-    const currentProducts = allProducts.slice(indexOfFirstProduct, indexOfLastProduct)
-
 
     useEffect(() => {
         dispatch(getAllProducts());
@@ -29,17 +21,21 @@ const Home = () => {
         });
     }, [dispatch]);
 
-
     return (
         <div className={styles.home}>
             {loading ? (
                 <h1 className={styles.loading}>Loading...</h1>
             ) : (
                 <Swiper
-                    slidesPerView={4}
-                    spaceBetween={30}
-                    navigation
+                    spaceBetween={10}
+                    slidesPerView={3.5}
+                    centeredSlides={true}
+                    loop={true}
+                    loopAdditionalSlides={2}
+                    navigation={{ clickable: true }}
+                    autoplay={{ delay: 3000, disableOnInteraction: false }}
                     pagination={{ clickable: true }}
+                    className="swiper"
                 >
                     {allProducts.map((product) => (
                         <SwiperSlide key={product.id}>
@@ -50,7 +46,6 @@ const Home = () => {
             )}
         </div>
     );
-
 }
 
 export default Home;

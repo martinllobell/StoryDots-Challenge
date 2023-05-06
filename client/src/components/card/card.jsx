@@ -21,15 +21,14 @@ const Card = ({ product }) => {
       >
         <img src={product.image_url} alt={product.name} />
         <div
-          className={`${styles.description} ${
-            showDescription ? styles.show : ""
-          }`}
+          className={`${styles.description} ${showDescription ? styles.show : ""
+            }`}
         >
           <p>{product.description}</p>
         </div>
       </div>
       <div className={styles.details}>
-        <h3>{product.name}</h3>
+        <h3>{product.Brand.name} {product.name}</h3>
         <p className={styles.price}>${product.price}</p>
       </div>
     </div>
