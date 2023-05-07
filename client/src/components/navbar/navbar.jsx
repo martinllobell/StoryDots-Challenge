@@ -20,7 +20,7 @@ const Navbar = () => {
     return (
         <div className={styles.navbar}>
             <div className={styles.logoContainer}>
-                <Link to="/home">
+                <Link to="/">
                     <button className={styles.btnLogo}>
                         <img
                             className="logo"
@@ -42,12 +42,12 @@ const Navbar = () => {
             </div>
             <div>
                 <div className={styles.createContainer}>
-                    <Link to="/products" className={styles.productsLink}>
+                    <Link to="/create/products" className={styles.productsLink}>
                         <button className={styles.btn}>Crear producto</button>
                     </Link>
                 </div>
                 <div className={styles.createContainer}>
-                    <Link to="/brands" className={styles.brandsLink}>
+                    <Link to="/create/brands" className={styles.brandsLink}>
                         <button className={styles.btn}>Crear marca</button>
                     </Link>
                 </div>

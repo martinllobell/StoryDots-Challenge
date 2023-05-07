@@ -33,7 +33,7 @@ const Home = () => {
                     loop={true}
                     loopAdditionalSlides={2}
                     navigation={{ clickable: true }}
-                    autoplay={{ delay: 3000, disableOnInteraction: false }}
+                    autoplay={{ delay: 2000, disableOnInteraction: false }}
                     pagination={{ clickable: true }}
                     className="swiper"
                 >

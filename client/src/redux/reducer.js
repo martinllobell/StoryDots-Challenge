@@ -47,12 +47,9 @@ function rootReducer(state = initialState, action) {
                 products: action.payload
             }
 
-    
 
         default: return state;
     }
 }
-
-
 
 export default rootReducer;
